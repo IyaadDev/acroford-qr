@@ -8,7 +8,7 @@ import 'animate.css';
 function Nav() {
   return (
     <a>
-      <nav className=" animate_animated animate_bounce navbar sticky-top fixed-top nav ctn">
+      <nav className="navbar nav">
         <img
           href="#"
           src="https://cdn.acroford.com/acroford_logo.webp"
