@@ -9,4 +9,12 @@ function HomePage () {
     );
 }
 
-export default HomePage;
+function App () {
+    return (
+        <>
+        <Nav />
+        </>
+    );
+}
+
+export default App;
