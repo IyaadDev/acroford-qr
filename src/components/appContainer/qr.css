@@ -1,0 +1,17 @@
+.option {
+    padding: 12px;
+    border-style: none;
+    border-radius: 16px;
+    background-color: #00064d;
+    font-size: 27px;
+    color: white;
+    margin: 16px;
+}
+
+.option:hover {
+    background-color: #00610a;
+}
+
+.icon {
+    margin: 8px;
+}
