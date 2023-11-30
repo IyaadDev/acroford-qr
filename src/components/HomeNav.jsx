@@ -2,7 +2,6 @@ import React from "react";
 import "../css/bootstrap.min.css";
 import "../css/nav.css";
 import "../css/app.css";
-import 'animate.css';
 // Navbar
 
 function Nav() {
