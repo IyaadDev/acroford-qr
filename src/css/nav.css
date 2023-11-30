@@ -1,0 +1,44 @@
+.nav {
+    margin: 50px;
+    padding: 10px;
+    background-color: rgba(232, 232, 232, 0.60);
+    color: black;
+    border-radius: 16px;
+    border-style: none;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-brand {
+    font-size: xx-large;
+    font-weight: bold;
+    text-decoration: none!important;
+}
+
+.ctn {
+    padding-left: 32px;
+}
+.cs3 {
+    margin-left: 20px;
+    text-decoration: none!important;
+}
+
+.navbar-brand:hover {
+    color: #6400bb!important;
+    font-weight: 1000;
+    text-decoration: none;
+}
+
+.a {
+    text-align: left;
+}
+
+
+.a:hover {
+    color: #6400bb!important;
+    font-weight: 1000;
+    text-decoration: none;
+}
+
+/*#3c0070*/

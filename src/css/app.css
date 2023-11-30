@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'Nova Square';
+    src: url('../fonts/NovaSquare-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Rubik Regular';
+    src: url('../fonts/Rubik-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Mont';
+    src: url('../fonts/Montserrat-Regular.ttf');
+}
+
+body {
+    background-color: rgb(0, 0, 23);
+}
+
+.normal {
+    font-family: 'Rubik Regular';
+    color: black;
+}
+
+.robo {
+    font-family: 'Nova Square';
+    color: black;
+}
+
+.mont {
+    font-family: 'Mont';
+    color: black;
+}
