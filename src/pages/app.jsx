@@ -10,11 +10,20 @@ function HomePage () {
     );
 }
 
+function Attribution () {
+    return (
+        <div>
+            <p className="text-muted">Icons by <a target="_blank" href="https://icons8.com">Icons8</a></p>
+        </div>
+    );
+}
+
 function App () {
     return (
         <>
         <Nav />
         <AppContainer />
+        <Attribution />
         </>
     );
 }

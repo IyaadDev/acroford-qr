@@ -15,3 +15,89 @@
 .icon {
     margin: 8px;
 }
+
+.center {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.qrGenContainer {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 32px;
+    margin: 16px;
+}
+
+.qrGenInput {
+    width: 75%;
+    height: 70px;
+    padding: 16px;
+    border-style: none;
+    border-radius: 16px;
+    background-color: #00064d;
+    font-size: 25px;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.qrGenInput:hover,
+.qrGenInput:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.qrGenInput:focus {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.textInput.container {
+    display: flex;
+    align-items: center;
+}
+
+.result {
+    margin: 16px;
+    padding: 16px;
+}
+
+
+.pasteIcon {
+    width: 25%;
+    height: 70px;
+    padding: 16px;
+    margin: 16px;
+    border-style: none;
+    border-radius: 16px;
+    background-color: #00064d;
+    font-size: 25px;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease-in-out;
+}
+.pasteIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pasteIcon:hover,
+.pasteIcon:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.pasteIcon:focus {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.textInput {
+    display: inline-block;
+}
+
+.pasteIcon:hover {
+    background-color: #00610a;
+}

@@ -3,29 +3,29 @@ import React, { useState } from 'react';
 import QRCode from 'qrcode.react';
 import "./qr.css";
 import "../../css/bootstrap.min.css";
+import GenerateWithText from './types/Text';
+import Crypto from './types/Crypto';
 
 function QRCodeGenerator() {
-    const [inputText, setInputText] = useState('');
     const [selectedType, setSelectedType] = useState('text');
 
     const handleTypeChange = (e) => {
         setSelectedType(e.target.value);
-        setInputText('');
     };
 
     const renderOptions = () => {
         const options = [
-            { value: 'text', label: 'Text', icon: null },
-            { value: 'bitcoin', label: 'Bitcoin Address', icon: 'https://cdn.acroford.com/icons/bitcoin.svg' },
-            { value: 'twitter', label: 'Twitter Account', icon: null },
-            { value: 'vcard', label: 'vCard', icon: null },
-            { value: 'url', label: 'URL', icon: null },
+            { value: 'text', label: 'Text', icon: 'https://cdn.acroford.com/icons/text.png' },
+            { value: 'bitcoin', label: 'Bitcoin Address', icon: 'https://cdn.acroford.com/icons/bitcoin.png' },
+            { value: 'twitter', label: 'Twitter Account', icon: 'https://cdn.acroford.com/icons/twitter.png' },
+            { value: 'vcard', label: 'vCard', icon: 'https://cdn.acroford.com/icons/vcard.png' },
+            { value: 'url', label: 'URL', icon: 'https://cdn.acroford.com/icons/url.png' },
         ];
 
         return (
-            <div className="row">
+            <div className="row center">
                 {options.map((option) => (
-                    <div
+                    <button
                         key={option.value}
                         className={`col-sm-3 option ${selectedType === option.value ? 'selected' : ''}`}
                         onClick={() => handleTypeChange({ target: { value: option.value } })}
@@ -33,7 +33,7 @@ function QRCodeGenerator() {
                         {option.icon && <img src={option.icon} alt={option.label} className="icon" />}
                         <br /> {/* New line */}
                         {option.label}
-                    </div>
+                    </button>
                 ))}
             </div>
         );
@@ -41,8 +41,9 @@ function QRCodeGenerator() {
 
     return (
         <div>
+            {selectedType === 'text' ? <GenerateWithText /> : null}
             {renderOptions()}
-            <QRCode value={inputText} />
+            <Crypto />
         </div>
     );
 }
